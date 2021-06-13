@@ -1,0 +1,52 @@
+/* Global Styles */
+:root {
+  --border: 0.25rem solid #fff;
+  --text-color: rgb(200, 200, 200);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  border: var(--border);
+  background-color: #333;
+  color: var(--text-color);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Container Styles */
+.main-container {
+  border: 0.25rem solid rgb(130, 216, 104);
+  width: 75vw;
+  height: 75vh;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-input-container {
+  margin-left: 1rem;
+}
+
+/* Finance View Styles */
+.finance-view-container {
+  border: 0.25rem solid rgb(168, 126, 126);
+  margin: 1rem;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Expense List Styles */
+.expense-list-container {
+  border: 0.25rem solid rgb(211, 35, 35);
+}
+
+.expense-list-container ul {
+  list-style: none;
+}
