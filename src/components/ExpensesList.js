@@ -1,13 +1,15 @@
-const ExpensesList = () => {
-  return(
-    <div className="expense-list-container">
-      <ul>
-        <li>Expense 1</li>
-        <li>Expense 2</li>
-        <li>Expense 3</li>
-      </ul>
-    </div>
-  )
-}
+const ExpensesList = ({ expenses }) => {
+  const listExpenses = expenses.map((expense, index) => (
+    <li key={index}>
+      {expense.expenseItem}: {expense.amount}
+    </li>
+  ));
 
-export default ExpensesList
+  return (
+    <div className="expense-list-container">
+      <ul>{listExpenses}</ul>
+    </div>
+  );
+};
+
+export default ExpensesList;

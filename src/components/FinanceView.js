@@ -45,7 +45,7 @@ const FinanceView = () => {
           <button>Add</button>
         </form>
       </div>
-      <ExpensesList />
+      <ExpensesList expenses={expenses} />
     </div>
   );
 };
